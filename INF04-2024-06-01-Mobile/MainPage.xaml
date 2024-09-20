@@ -8,38 +8,41 @@
             Spacing="25"
             BackgroundColor="#f5f5dc">
             <Label 
+                Padding="20"
                 Text="Gra w kości. Autor: 00000000000"
                 TextColor="White"
-                FontSize="Title"
+                FontSize="Large"
                 BackgroundColor="#a52a2a"/>
 
             <Button 
                 BackgroundColor="Chocolate"
                 Text="RZUĆ KOŚĆMI"
-                Clicked="DiceRoll"/>
+                Clicked="DiceRoll"
+                HorizontalOptions="Center"/>
 
-            <HorizontalStackLayout>
+            <FlexLayout
+                Direction="Row">
                 <Image
                     x:Name="Dice1"
-                    WidthRequest="70"
-                    Source="k6_1.jpg" />
+                    FlexLayout.Basis="20%"
+                    Source="k6_1.png" />
                 <Image
                     x:Name="Dice2"
-                    WidthRequest="70"
-                    Source="k6_2.jpg" />
+                    FlexLayout.Basis="20%"
+                    Source="k6_1.png" />
                 <Image
                     x:Name="Dice3"
-                    WidthRequest="70"
-                    Source="k6_3.jpg" />
+                    FlexLayout.Basis="20%"
+                    Source="k6_1.png" />
                 <Image
                     x:Name="Dice4"
-                    WidthRequest="70"
-                    Source="k6_4.jpg" />
+                    FlexLayout.Basis="20%"
+                    Source="k6_1.png" />
                 <Image
                     x:Name="Dice5"
-                    WidthRequest="70"
-                    Source="k6_5.jpg" />
-            </HorizontalStackLayout>
+                    FlexLayout.Basis="20%"
+                    Source="k6_1.png" />
+            </FlexLayout>
 
             <Label
                 x:Name="RollScoreLabel"
@@ -52,7 +55,8 @@
             <Button 
                 BackgroundColor="Chocolate"
                 Text="RESETUJ WYNIK"
-                Clicked="ResetScore"/>
+                Clicked="ResetScore"
+                HorizontalOptions="Center"/>
         </VerticalStackLayout>
     </ScrollView>
 
