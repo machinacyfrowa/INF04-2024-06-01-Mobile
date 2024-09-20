@@ -5,7 +5,6 @@
 
     <ScrollView>
         <VerticalStackLayout
-            HorizontalOptions="Center"
             Spacing="25"
             BackgroundColor="#f5f5dc">
             <Label 
