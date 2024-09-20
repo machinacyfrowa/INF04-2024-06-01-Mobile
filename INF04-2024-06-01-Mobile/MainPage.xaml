@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="INF04_2024_06_01_Mobile.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            HorizontalOptions="Center"
+            Spacing="25"
+            BackgroundColor="#f5f5dc">
+            <Label 
+                Text="Gra w kości. Autor: 00000000000"
+                TextColor="White"
+                FontSize="Title"
+                BackgroundColor="#a52a2a"/>
+
+            <Button 
+                BackgroundColor="Chocolate"
+                Text="RZUĆ KOŚĆMI"
+                Clicked="DiceRoll"/>
+
+            <HorizontalStackLayout>
+                <Image
+                    x:Name="Dice1"
+                    WidthRequest="70"
+                    Source="k6_1.jpg" />
+                <Image
+                    x:Name="Dice2"
+                    WidthRequest="70"
+                    Source="k6_2.jpg" />
+                <Image
+                    x:Name="Dice3"
+                    WidthRequest="70"
+                    Source="k6_3.jpg" />
+                <Image
+                    x:Name="Dice4"
+                    WidthRequest="70"
+                    Source="k6_4.jpg" />
+                <Image
+                    x:Name="Dice5"
+                    WidthRequest="70"
+                    Source="k6_5.jpg" />
+            </HorizontalStackLayout>
+
+            <Label
+                x:Name="RollScoreLabel"
+                HorizontalTextAlignment="Center"
+                Text="Wynik losowania:"/>
+            <Label 
+                x:Name="GameScoreLabel"
+                HorizontalTextAlignment="Center"
+                Text="Wynik gry: 0" />
+            <Button 
+                BackgroundColor="Chocolate"
+                Text="RESETUJ WYNIK"
+                Clicked="ResetScore"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
